@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+@layer base {
+  html {
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+}
+.btn-rounded {
+  @apply p-3 px-6 text-white  text-center bg-brightRed rounded-full hover:bg-brightRedLight;
+}
+
+.header {
+  @apply text-5xl font-bold  md:text-4xl  text-dardBlue max-w-md   font-sans;
+}
+
+.prStyle{
+    @apply text-[#8395a7] max-w-sm md:mx-0 mx-auto  text-lg;
+    /* color: hsl(0, 0%, 98%); */
+}
