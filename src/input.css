@@ -9,13 +9,13 @@
   }
 }
 body {
-  background-image: url("../src/images/bg-tablet-pattern.svg");
+  background-image: url("/dist/images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: 90% -25%;
 }
 .features {
-  background-image: url("../src/images/bg-tablet-pattern.svg");
+  background-image: url("/dist/images/bg-tablet-pattern.svg");
   background-position: -55% -144%;
   background-repeat: no-repeat;
 }
@@ -64,7 +64,7 @@ body {
 
 /* ....... */
 #cta {
-  background-image: url("../src/images/bg-simplify-section-desktop.svg");
+  background-image: url("/dist/images/bg-simplify-section-desktop.svg");
 }
 .btn-rounded {
   @apply p-3 px-6 text-white  text-center bg-brightRed rounded-full hover:bg-brightRedLight;
