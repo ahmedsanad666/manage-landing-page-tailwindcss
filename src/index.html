@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../dist/output.css">
-    <title>Document</title>
+    <title>ManagePage</title>
 </head>
 
 <body>
+
 
 
     <!-- navbar -->
@@ -19,34 +24,50 @@
             <img src="./images/logo.svg" alt="manageLogo">
         </div>
         <!-- menu Items -->
-        <ul class=" space-x-6 hidden md:flex ">
+        <ul class=" space-x-8 hidden md:flex ">
             <li class="hover:text-darkGrayishBlue">
                 <a href="">Pricing</a>
             </li>
-            <li class="hover:text-darkGrayishBlue">
+            <li class="hover:text-darkGrayishBlue ">
                 <a href="">Product</a>
             </li>
-            <li class="hover:text-darkGrayishBlue">
-                <a href="">About Us</a>
+            <li class="hover:text-darkGrayishBlue  ">
+                <a href="">AboutUs</a>
             </li>
             <li class="hover:text-darkGrayishBlue">
                 <a href="">Careers</a>
             </li>
-            <li class="hover:text-darkGrayishBlue">
+            <li class="hover:text-darkGrayishBlue ">
                 <a href="">Community</a>
             </li>
         </ul>
-        <div class="getStarted text-right hidden md:block">
+        <div class="getStarted text-right hidden md:block ">
             <a href=" " class="  btn-rounded">
                 Get Started
             </a>
+        </div>
+        <!-- hamburger menu -->
+        <button id="menu-btn" class="md:hidden block hamburger focus:outline-none text-right">
+            <span class="bamburger-top"></span>
+            <span class="bamburger-middle"></span>
+            <span class="bamburger-bottom"></span>
+        </button>
+
+        <!-- meneu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex flex-col items-center hidden bg-veryLightGray space-y-6 font-bold mt-6 drop-shadow-md right-6 py-5 left-6 rounded-lg" >
+                <a href="" class="hover:text-brightRed  ">Home </a>
+                <a href="" class="hover:text-brightRed ">Pricing</a>
+                <a href="" class="hover:text-brightRed ">About as</a>
+                <a href="" class="hover:text-brightRed ">Community</a>
+            </div>
         </div>
     </nav>
 
     <!-- hero Section -->
 
-    <section id="hero ">
-        <div class="container  items-center flex md:flex-row flex-col-reverse my-4  py-5  space-y-0 ">
+    <section id="hero  ">
+        <div class="container px-6 items-center flex md:flex-row flex-col-reverse my-4  py-5  space-y-0 ">
 
             <!-- left item  -->
             <div class="  md:w-1/2 md:text-left text-center space-y-8 ">
@@ -72,14 +93,15 @@
     </section>
     <!-- features section -->
 
-    <section class="features  border pt-10 mt-10">
-        <div class="container px-3  flex md:flex-row flex-col md:space-y-0 space-y-16 ">
+    <section class="features   pt-14 mt-10">
+        <div class="container px-6  flex md:flex-row flex-col md:space-y-0 space-y-16 ">
             <!-- left box -->
             <div class="md:w-1/2 space-y-8  md:text-left text-center">
                 <h1 class="header text-lg max-w-sm">
                     What’s different about Manage?
                 </h1>
-                <p class="prStyle ">Manage provides all the functionality your team needs, without the complexity. Our software is
+                <p class="prStyle ">Manage provides all the functionality your team needs, without the complexity. Our
+                    software is
                     tailor-made for modern digital product teams.</p>
             </div>
             <!-- right box -->
@@ -100,19 +122,119 @@
                         Advanced built-in reports
                     </div>
 
-                    <p class="prStyle">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                    <p class="prStyle">Set internal delivery estimates and track progress toward company goals. Our
+                        customisable dashboard helps you build out the reports you need to keep key stakeholders
+                        informed.</p>
                 </div>
                 <div class="flex-col space-y-8">
                     <div class="bg-veryPaleRed rounded-full py-2 ">
                         <span class=" p-5 text-white font-bold py-2.5  bg-brightRed rounded-full">01</span>
-                       Everything you need in one place
+                        Everything you need in one place
                     </div>
 
-                    <p class="prStyle">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                    <p class="prStyle">Stop jumping from one service to another to communicate, store files, track tasks
+                        and share documents. Manage offers an all-in-one team productivity solution.</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- testimonials section -->
+
+    <section id="testimonials">
+        <!-- blok for heading and test block -->
+        <div class="  text-center pt-20">
+            <h1 class=" header  !max-w-full"> What they've said</h1>
+            <!-- testimonial container -->
+            <div class="flex md:flex-row  flex-col  md:space-x-9  px-10  md:px-0 mt-20 ">
+                <!-- fist comment  -->
+                <div class="testBlock">
+                    <img src="./images/avatar-anisha.png" class="md:-mt-16 -mt-12 md:w-32 w-24">
+
+                    <h4 class="text-dardBlue font-bold ">Anisha Li</h4>
+                    <p class="testP">“Manage has supercharged our team’s workflow. The ability to maintain visibility on
+                        larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+                <div class="testBlock">
+                    <img src="./images/avatar-ali.png" class="md:-mt-16 -mt-12 md:w-32  w-24">
+                    <h4 class="text-dardBlue font-bold ">Anisha Li</h4>
+                    <p class="testP">“Manage has supercharged our team’s workflow. The ability to maintain visibility on
+                        larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+                <div class="testBlock ">
+                    <img src="./images/avatar-richard.png" class="md:-mt-16 -mt-12 md:w-32 w-24">
+
+                    <h4 class="text-dardBlue font-bold ">Anisha Li</h4>
+                    <p class="testP">“Manage has supercharged our team’s workflow. The ability to maintain visibility on
+                        larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+
+            </div>
+            <button class="btn-rounded mt-16">
+                <a href="">Get Started</a>
+            </button>
+        </div>
+
+    </section>
+    <!-- CTA SECTOIN -->
+
+    <section class="min-h-40 bg-brightRed mt-10 py-10 " id="cta">
+        <div class="container  h-full px-6 flex md:flex-row flex-col justify-between items-center">
+            <h1
+                class="text-3xl font-bold md:max-w-lg max-w-sm text-veryLightGray md:text-left text-center md:mb-0 mb-3">
+                Simplify how your team works today </h1>
+            <button
+                class=" 	  p-3 px-6 bg-veryLightGray text-center text-brightRed rounded-full hover:bg-brightRed hover:text-veryLightGray transition-all duration-100">Get
+                Started </button>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="lg:min-h-40 h-90  bg-veryDarkBlue py-8">
+        <div
+            class="container lg:grid flex flex-col-reverse justify-center items-center  grid-cols-3 grid-flow-col min-h-full space-y-8 ">
+            <div class=" text-center flex lg:flex-col flex-col-reverse  space-y-4  ">
+                <p class="text-darkGrayishBlue mt-6 lg:hidden "> copyright 2023 All rights reserved</p>
+                <img src="./images/logo.svg" class="mx-auto  mt-4 " alt="">
+
+                <ul class="flex   justify-between  space-x-4 mx-auto  text-veryPaleRed   ">
+                    <li class="cursor-pointer "><i class="fa-brands fa-facebook fa-xl"></i></li>
+                    <li class="cursor-pointer"><i class="fa-brands fa-instagram fa-xl"></i></i></li>
+                    <li class="cursor-pointer"><i class="fa-brands fa-facebook  fa-xl"></i></li>
+                    <li class="cursor-pointer"><i class="fa-brands fa-facebook  fa-xl"></i></li>
+                </ul>
+
+            </div>
+
+            <!-- ........... -->
+            <div class="flex">
+
+                <div class="  flex justify-center items-center text-veryLightGray">
+                    <ul class="  p-6">
+                        <li class="cursor-pointer hover:red">Home</li>
+                        <li class="cursor-pointer hover:text-brightRed">Pricing</li>
+                        <li class="cursor-pointer hover:text-brightRed">Products</li>
+                        <li class="cursor-pointer hover:text-brightRed">About As</li>
+                    </ul>
+                </div>
+                <div class=" text-veryLightGray flex items-center pl-4">
+                    <ul>
+                        <li class="hover:text-brightRed cursor-pointer">career</li>
+                        <li class="hover:text-brightRed cursor-pointer">Community</li>
+                        <li class="hover:text-brightRed cursor-pointer">privacy policy</li>
+                    </ul>
+                </div>
+                <!-- ......... -->
+            </div>
+            <div class=" col-span-2 pt-8">
+                <form>
+                    <input type="text" placeholder="Email Adress" class="rounded-full p-3 outline-none ">
+                    <button class="btn-rounded"><a href="#">Submit</a></button>
+                </form>
+                <p class="text-darkGrayishBlue mt-6 hidden lg:block"> copyright 2023 All rights reserved</p>
+            </div>
+
+    </footer>
+
 
 </body>
 
